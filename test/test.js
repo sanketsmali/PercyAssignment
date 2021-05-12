@@ -1,15 +1,13 @@
 const percySnapshot = require('@percy/puppeteer');
 const puppeteer = require('puppeteer');
-const TEST_URL = 'https://www.browserstack.com';
+const TEST_URL = 'https://ci.bsstag.com/ ';
 const TEST_WIDTHS = [375, 480, 720, 1280, 1440, 1920];
 
 
 
 describe('Integration test with visual testing', function() {
     it('Loads the homepage', async function () {
-    this.timeout(100000) // 
-    console.log(TEST_URL);
-    console.log(TEST_URL+'/pricing');
+    this.timeout(100000) // ;
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
 
