@@ -70,8 +70,7 @@ $ git commit -m "changed the TEST_URL from http://browserstack.com/  to https://
 ```
 
 
-### Step 7
-Run the tests with snapshots again:
+### Step 7: Run the tests with snapshots again
 
 ```bash
 $ npm run test
