@@ -29,22 +29,25 @@ Sign in to Percy and create a new project. You can name the project. After you'v
 
 Before you can successfully run Percy, the PERCY_TOKEN environment variable must be set:
 
-# Windows
+#### Windows
+```bash
 $ set PERCY_TOKEN=<your token here>
+```
 
-# PowerShell
-$ $Env:PERCY_TOKEN="<your token here>"
-
-# Unix 
-$ export PERCY_TOKEN=<your token here>
-
+#### Mac OSx / Unix
+```bash
+$ export PERCY_TOKEN="<your token here>"
+```
 
 ### Step 4:  Run Project
 
 Check out a new branch for your work in this tutorial (we'll call this branch build1), then run tests & take snapshots:
 
-1. git checkout -b build1
-2. npm run test
+```bash
+$ git checkout -b build1
+$ npm run test
+```
+
 
 This will run the Puppeteer tests, which contain calls to create Percy snapshots. The snapshots will then be uploaded to Percy for comparison. Percy will use the Percy token you used in Step 3 to know which organization and project to upload the snapshots to.
 
@@ -57,14 +60,18 @@ Update the test.js having const TEST_URL from http://browserstack.com/  to https
 
 
 ### Step 6: Commit the Changes
+
+```bash
 $ git commit -m "changed the TEST_URL from http://browserstack.com/  to https://ci.bsstag.com/"
+```
 
 
 Step 7
 Run the tests with snapshots again:
 
+```bash
 $ npm run test
-
+```
 
 This will run the tests again and take new snapshots of our modified application. The new snapshots will be uploaded to Percy and compared with the previous snapshots, showing any visual diffs.
 
