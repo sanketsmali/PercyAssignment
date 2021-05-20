@@ -1,4 +1,4 @@
-# PERCY SCRIPT 
+# PERCY - Puppeteer 
 
 ## Introduction
 
@@ -8,6 +8,10 @@ Prod - https://www.browserstack.com
 
 Non-Prod - https://ci.bsstag.com/ 
 
+## Setup
+ - Node 12+ with npm
+ - git
+ - Vscode (optional)
 
 ## Setup
 
