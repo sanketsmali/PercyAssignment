@@ -40,7 +40,7 @@ $ set PERCY_TOKEN=<your token here>
 
 #### Mac OSx / Unix
 ```bash
-$ export PERCY_TOKEN="<your token here>"
+$ export PERCY_TOKEN=<your token here>
 ```
 
 ### Step 4:  Run Project
